@@ -1,8 +1,11 @@
 # nodejs_openam
 
 
-Create a file in to hold values. Something like `./config/openam.js`. Fill it with 
-stuff like this
+
+
+
+Create a file in to hold configuration values. Perhaps name it something like `./config/openam.js`. Fill it with 
+OpenAM endpoints and the return point back to your application.
 
 ```
 module.exports = {
@@ -35,3 +38,7 @@ app.use((req, res, next) => {
     
 });
 ```
+
+
+## Work Log
+2018/07/20 - Using middleware as all or nothing. If you have a valid SSO token, you're in. Otherwise, you are redirected to the SSO login. 
