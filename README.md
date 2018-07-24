@@ -21,7 +21,7 @@ module.exports = {
 In App.js, set up 
 ```
 // module and config
-var soc_openam = require('./soc_openam');
+var soc_openam = require('./nodejs_openam');
 var openamConfig = require('./config/openam');
 
 // middle ware for soc_openam
